@@ -4,48 +4,37 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
+import net.miginfocom.swing.MigLayout;
+
+import java.awt.EventQueue;
+import javax.swing.JFrame;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+import sooper.demo.tkrun.*;
+import java.awt.BorderLayout;
+import net.miginfocom.swing.MigLayout;
+
 public class Supermercado {
 
-	protected Shell shell;
+	
+	protected JFrame frmSooper;
+	
+	public Supermercado() {
+		initialize();
+	}
+	
+	private void initialize() {
+		frmSooper = new JFrame();
+		frmSooper.setTitle("SOOPER");
+		frmSooper.getContentPane().setLayout(new MigLayout("", "[grow]", "[][][grow][][][][][][][][]"));
+	}
+	
+
+
 	
 	
-	
-	/**
-	 * Launch the application.
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		try {
-			Supermercado window = new Supermercado();
-			window.open();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
-	 * Open the window.
-	 */
-	public void open() {
-		Display display = Display.getDefault();
-		createContents();
-		shell.open();
-		shell.layout();
-		while (!shell.isDisposed()) {
-			if (!display.readAndDispatch()) {
-				display.sleep();
-			}
-		}
-	}
-
-	/**
-	 * Create contents of the window.
-	 */
-	protected void createContents() {
-		shell = new Shell();
-		shell.setSize(450, 300);
-		shell.setText("SOOPER");
-
-	}
 
 }

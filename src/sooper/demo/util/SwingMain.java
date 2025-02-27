@@ -10,6 +10,7 @@ import java.awt.event.ActionEvent;
 import sooper.demo.tkrun.*;
 import java.awt.BorderLayout;
 
+
 /**
  * Punto de entrada principal que incluye botones para la ejecucion de las pantallas 
  * de las aplicaciones de ejemplo
@@ -56,7 +57,7 @@ public class SwingMain {
 		JButton btnNewButton = new JButton("BIENVENIDO A SOOPER ONLINE");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Supermercado supermercado = new Supermercado();			}
+				Supermercado supermercado = new Supermercado();	}
 		});
 		frame.getContentPane().add(btnNewButton, BorderLayout.CENTER);
 		
