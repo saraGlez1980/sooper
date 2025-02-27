@@ -3,12 +3,25 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-23">
 		<attributes>
 			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/sari/git/SOOPER/JARfiles/org.eclipse.swt.win32.win32.x86_64_3.5.2.v3557f.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sari/git/SOOPER/JARfiles/org.eclipse.wb.swing.MigLayout.lib_1.9.1.202210231159.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sari/git/SOOPER/JARfiles/miglayout-core-5.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sari/git/SOOPER/JARfiles/miglayout-swing-5.2.jar"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="JARfiles">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>

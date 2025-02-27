@@ -1,8 +1,8 @@
 package sooper.demo.tkrun;
 
-import org.eclipse.swt.SWT;
-import org.eclipse.swt.widgets.Display;
-import org.eclipse.swt.widgets.Shell;
+/*ventana para la gestion de pedidos. La ventana esta construida usando WindowsBuilder.
+ * Se instala desde el Eclipse Marketplace. Una vez instalado, tan solo hay que abrir 
+ * la clase con boton derecho-> abrir con WindowBuilder Editor  */
 
 import net.miginfocom.swing.MigLayout;
 
@@ -27,13 +27,15 @@ public class Supermercado {
 	}
 	
 	private void initialize() {
+		
+		//inicializacion y parámetros del frame. Codigo auto-generado desde el WinBuilder
 		frmSooper = new JFrame();
 		frmSooper.setTitle("SOOPER");
-		frmSooper.getContentPane().setLayout(new MigLayout("", "[grow]", "[][][grow][][][][][][][][]"));
+		frmSooper.setBounds(0, 0, 496, 496);
+		frmSooper.getContentPane().setLayout(new MigLayout("", "[grow][grow]", "[][][grow][][][][][][][][]"));
+		frmSooper.setVisible(true);
+		
 	}
-	
-
-
 	
 	
 
