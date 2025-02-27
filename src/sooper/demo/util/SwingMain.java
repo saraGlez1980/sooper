@@ -2,6 +2,7 @@ package sooper.demo.util;
 
 import java.awt.EventQueue;
 import javax.swing.JFrame;
+
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -61,7 +62,10 @@ public class SwingMain {
 		});
 		frame.getContentPane().add(btnNewButton, BorderLayout.CENTER);
 		
-	
+		Database db=new Database(); //creo la base de datos de prueba
+		
+		db.createDatabase(false); //le paso el valor falso porque considero que no esta creada aun
+		db.loadDatabase(); //cargo datos de prueba
 		
 	}
 		
