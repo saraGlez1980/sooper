@@ -58,7 +58,7 @@ public class SwingMain {
 		JButton btnNewButton = new JButton("BIENVENIDO A SOOPER ONLINE");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Supermercado supermercado = new Supermercado();	}
+				SupermercadoView supermercado = new SupermercadoView();	}
 		});
 		frame.getContentPane().add(btnNewButton, BorderLayout.CENTER);
 		

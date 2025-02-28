@@ -17,12 +17,12 @@ import sooper.demo.tkrun.*;
 import java.awt.BorderLayout;
 import net.miginfocom.swing.MigLayout;
 
-public class Supermercado {
+public class SupermercadoView {
 
 	
 	protected JFrame frmSooper;
 	
-	public Supermercado() {
+	public SupermercadoView() {
 		initialize();
 	}
 	
@@ -32,7 +32,7 @@ public class Supermercado {
 		frmSooper = new JFrame();
 		frmSooper.setTitle("SOOPER");
 		frmSooper.setBounds(0, 0, 496, 496);
-		frmSooper.getContentPane().setLayout(new MigLayout("", "[grow][grow]", "[][][grow][][][][][][][][]"));
+		frmSooper.getContentPane().setLayout(new MigLayout("", "[grow][grow][grow][grow]", "[][][grow][][][][][][][][]"));
 		frmSooper.setVisible(true);
 		
 	}
