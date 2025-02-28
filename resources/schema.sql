@@ -3,7 +3,7 @@
 
 --Para giis.demo.tkrun:
 drop table pedido;
-drop table producto;
+drop table articulo;
 drop table contenedor;
 drop table articuloPedido;
 
@@ -28,11 +28,12 @@ CREATE TABLE "pedido" (
 	PRIMARY KEY("idPedido" AUTOINCREMENT)
 );
 
-CREATE TABLE "producto" (
-	"idProducto"	INTEGER NOT NULL,
-	"tamaño"	INTEGER NOT NULL,
+CREATE TABLE "articulo" (
+	"idArticulo"	INTEGER NOT NULL,
+	"volumen"	REAL NOT NULL,
+	"nombre"	TEXT NOT NULL,
 	"categoria"	TEXT NOT NULL,
-	PRIMARY KEY("idProducto" AUTOINCREMENT)
+	PRIMARY KEY("idArticulo")
 );
 
 
